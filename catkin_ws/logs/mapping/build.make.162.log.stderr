@@ -1,0 +1,11 @@
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:[m[K In function ‘[01m[Kvoid callback(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:75:40:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+   75 |                     if (z > z_vals.at[i[01;31m[K][m[K) {
+      |                                        [01;31m[K^[m[K
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs::OccupancyGrid[m[K’ {aka ‘[01m[Kstruct nav_msgs::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kat[m[K’; did you mean ‘[01m[Kdata[m[K’?
+   93 |                 grid.[01;31m[Kat[m[K(i) = 100 * (z_vals.at(i) - z_min) / (z_max - z_min);
+      |                      [01;31m[K^~[m[K
+      |                      [32m[Kdata[m[K
+make[2]: *** [CMakeFiles/transform_pointcloud_node.dir/build.make:63: CMakeFiles/transform_pointcloud_node.dir/src/transform_pointcloud.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:403: CMakeFiles/transform_pointcloud_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

@@ -1,0 +1,5 @@
+[31m[1mCMake Error[0m at /home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/CMakeLists.txt:6 (catkin_package):
+  Unknown CMake command "catkin_package".
+
+
+make: *** [Makefile:1456: cmake_check_build_system] Error 1

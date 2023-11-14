@@ -1,0 +1,357 @@
+[  0%] Built target topic_tools_generate_messages_lisp
+[  0%] Built target nodelet_generate_messages_py
+[  0%] Built target pcl_msgs_generate_messages_nodejs
+[  0%] Built target topic_tools_generate_messages_cpp
+[  0%] Built target std_srvs_generate_messages_lisp
+[  0%] Built target topic_tools_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_eus
+[  0%] Built target pcl_msgs_generate_messages_py
+[  0%] Built target pcl_msgs_generate_messages_cpp
+[  0%] Built target tf_generate_messages_lisp
+[  0%] Built target tf_generate_messages_nodejs
+[  0%] Built target topic_tools_generate_messages_nodejs
+[  0%] Built target pcl_msgs_generate_messages_lisp
+[  0%] Built target pcl_msgs_generate_messages_eus
+[  0%] Built target tf_generate_messages_cpp
+[  0%] Built target bond_generate_messages_py
+[  0%] Built target nodelet_generate_messages_lisp
+[  0%] Built target rosgraph_msgs_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_lisp
+[  0%] Built target std_msgs_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_cpp
+[  0%] Built target std_msgs_generate_messages_py
+[  0%] Built target roscpp_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_cpp
+[  0%] Built target actionlib_msgs_generate_messages_py
+[  0%] Built target bond_generate_messages_lisp
+[  0%] Built target geometry_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_lisp
+[  0%] Built target tf_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_eus
+[  0%] Built target roscpp_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_nodejs
+[  0%] Built target rosgraph_msgs_generate_messages_lisp
+[  0%] Built target sensor_msgs_generate_messages_eus
+[  0%] Built target actionlib_msgs_generate_messages_eus
+[  0%] Built target bond_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_py
+[  0%] Built target roscpp_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_py
+[  0%] Built target topic_tools_generate_messages_py
+[  0%] Built target nodelet_topic_tools_gencfg
+[  0%] Built target geometry_msgs_generate_messages_cpp
+[  0%] Built target sensor_msgs_generate_messages_lisp
+[  0%] Built target dynamic_reconfigure_generate_messages_nodejs
+[  0%] Built target bond_generate_messages_cpp
+[  0%] Built target roscpp_generate_messages_nodejs
+[  0%] Built target sensor_msgs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_lisp
+[  0%] Built target tf2_msgs_generate_messages_py
+[  0%] Built target tf2_msgs_generate_messages_eus
+[  0%] Built target std_srvs_generate_messages_py
+[  0%] Built target geometry_msgs_generate_messages_py
+[  0%] Built target rosgraph_msgs_generate_messages_cpp
+[  0%] Built target rosgraph_msgs_generate_messages_eus
+[  0%] Built target pcl_ros_gencfg
+[  0%] Built target actionlib_msgs_generate_messages_cpp
+[  0%] Built target actionlib_generate_messages_nodejs
+[  0%] Built target actionlib_generate_messages_eus
+[  0%] Built target nodelet_generate_messages_eus
+[  0%] Built target tf2_msgs_generate_messages_lisp
+[  0%] Built target actionlib_msgs_generate_messages_lisp
+[  0%] Built target tf_generate_messages_py
+[  0%] Built target actionlib_generate_messages_py
+[  0%] Built target actionlib_msgs_generate_messages_nodejs
+[  0%] Built target std_msgs_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_generate_messages_cpp
+[  0%] Built target tf2_msgs_generate_messages_nodejs
+[  0%] Built target geometry_msgs_generate_messages_nodejs
+[  0%] Built target nodelet_generate_messages_nodejs
+[  0%] Built target dynamic_reconfigure_generate_messages_lisp
+[  0%] Built target nodelet_generate_messages_cpp
+[  0%] Built target dynamic_reconfigure_generate_messages_eus
+[  0%] Built target dynamic_reconfigure_gencfg
+[  0%] Built target std_srvs_generate_messages_nodejs
+[  0%] Built target tf2_msgs_generate_messages_cpp
+[35m[1mScanning dependencies of target transform_pointcloud_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/transform_pointcloud_node.dir/src/transform_pointcloud.cpp.o[0m
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:[m[K In function ‘[01m[Kvoid callback(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:47:77:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kstd::vector<std::vector<float> >::vector(int, int)[m[K’
+   47 |             std::vector<std::vector<float>> z_vals(x_size * y_size, -INT_MAX[01;31m[K)[m[K;
+      |                                                                             [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_vector.h:650:2:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _InputIterator, class> std::vector<_Tp, _Alloc>::vector(_InputIterator, _InputIterator, const allocator_type&)[m[K’
+  650 |  [01;36m[Kvector[m[K(_InputIterator __first, _InputIterator __last,
+      |  [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:650:2:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:65[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+/usr/include/c++/9/bits/stl_iterator_base_types.h: In substitution of ‘[01m[Ktemplate<class _InIter> using _RequireInputIter = typename std::enable_if<std::is_convertible<typename std::iterator_traits<_Iterator>::iterator_category, std::input_iterator_tag>::value>::type [with _InIter = int][m[K’:
+[01m[K/usr/include/c++/9/bits/stl_vector.h:649:9:[m[K   required from here
+[01m[K/usr/include/c++/9/bits/stl_iterator_base_types.h:232:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Kiterator_category[m[K’ in ‘[01m[Kstruct std::iterator_traits<int>[m[K’
+  232 |     using [01;31m[K_RequireInputIter[m[K = typename
+      |           [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_vector.h:622:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::initializer_list<_Tp>, const allocator_type&) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::vector<float> >][m[K’
+  622 |       [01;36m[Kvector[m[K(initializer_list<value_type> __l,
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:622:43:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kstd::initializer_list<std::vector<float> >[m[K’
+  622 |       vector([01;36m[Kinitializer_list<value_type> __l[m[K,
+      |              [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:604:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::vector<float> >][m[K’
+  604 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:604:23:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kstd::vector<std::vector<float> >&&[m[K’
+  604 |       vector([01;36m[Kvector&& __rv[m[K, const allocator_type& __m)
+      |              [01;36m[K~~~~~~~~~^~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:586:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::false_type) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::vector<float> >; std::false_type = std::integral_constant<bool, false>][m[K’
+  586 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m, false_type)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:586:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[01m[K/usr/include/c++/9/bits/stl_vector.h:582:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&, const allocator_type&, std::true_type) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::vector<float> >; std::true_type = std::integral_constant<bool, true>][m[K’
+  582 |       [01;36m[Kvector[m[K(vector&& __rv, const allocator_type& __m, true_type) noexcept
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:582:7:[m[K [01;36m[Knote: [m[K  candidate expects 3 arguments, 2 provided
+[01m[K/usr/include/c++/9/bits/stl_vector.h:572:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&, const allocator_type&) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::vector<float> >][m[K’
+  572 |       [01;36m[Kvector[m[K(const vector& __x, const allocator_type& __a)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:572:28:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst std::vector<std::vector<float> >&[m[K’
+  572 |       vector([01;36m[Kconst vector& __x[m[K, const allocator_type& __a)
+      |              [01;36m[K~~~~~~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:569:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>&&) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >][m[K’
+  569 |       [01;36m[Kvector[m[K(vector&&) noexcept = default;
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:569:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/c++/9/bits/stl_vector.h:550:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const std::vector<_Tp, _Alloc>&) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >][m[K’
+  550 |       [01;36m[Kvector[m[K(const vector& __x)
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:550:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/c++/9/bits/stl_vector.h:519:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const value_type&, const allocator_type&) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::value_type = std::vector<float>; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::vector<float> >][m[K’
+  519 |       [01;36m[Kvector[m[K(size_type __n, const value_type& __value,
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:519:47:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst value_type&[m[K’ {aka ‘[01m[Kconst std::vector<float>&[m[K’}
+  519 |       vector(size_type __n, [01;36m[Kconst value_type& __value[m[K,
+      |                             [01;36m[K~~~~~~~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:507:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(std::vector<_Tp, _Alloc>::size_type, const allocator_type&) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::size_type = long unsigned int; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::vector<float> >][m[K’
+  507 |       [01;36m[Kvector[m[K(size_type __n, const allocator_type& __a = allocator_type())
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:507:51:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kint[m[K’ to ‘[01m[Kconst allocator_type&[m[K’ {aka ‘[01m[Kconst std::allocator<std::vector<float> >&[m[K’}
+  507 |       vector(size_type __n, [01;36m[Kconst allocator_type& __a = allocator_type()[m[K)
+      |                             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:494:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector(const allocator_type&) [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >; std::vector<_Tp, _Alloc>::allocator_type = std::allocator<std::vector<float> >][m[K’
+  494 |       [01;36m[Kvector[m[K(const allocator_type& __a) _GLIBCXX_NOEXCEPT
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:494:7:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 2 provided
+[01m[K/usr/include/c++/9/bits/stl_vector.h:484:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>::vector() [with _Tp = std::vector<float>; _Alloc = std::allocator<std::vector<float> >][m[K’
+  484 |       [01;36m[Kvector[m[K() = default;
+      |       [01;36m[K^~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:484:7:[m[K [01;36m[Knote: [m[K  candidate expects 0 arguments, 2 provided
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:75:40:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[K<unresolved overloaded function type>[int][m[K’ for array subscript
+   75 |                     if (z > z_vals.at[i[01;31m[K][m[K) {
+      |                                        [01;31m[K^[m[K
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:76:40:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator=[m[K’ (operand types are ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} and ‘[01m[Kfloat[m[K’)
+   76 |                         z_vals.at(i) = [01;31m[Kz[m[K;;
+      |                                        [01;31m[K^[m[K
+In file included from [01m[K/usr/include/c++/9/vector:72[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/vector.tcc:198:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(const std::vector<_Tp, _Alloc>&) [with _Tp = float; _Alloc = std::allocator<float>][m[K’
+  198 |     [01;36m[Kvector<_Tp, _Alloc>[m[K::
+      |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/vector.tcc:199:42:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kconst std::vector<float>&[m[K’
+  199 |     operator=([01;36m[Kconst vector<_Tp, _Alloc>& __x[m[K)
+      |               [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/9/vector:67[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_vector.h:706:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::vector<_Tp, _Alloc>&&) [with _Tp = float; _Alloc = std::allocator<float>][m[K’
+  706 |       [01;36m[Koperator[m[K=(vector&& __x) noexcept(_Alloc_traits::_S_nothrow_move())
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:706:26:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kstd::vector<float>&&[m[K’
+  706 |       operator=([01;36m[Kvector&& __x[m[K) noexcept(_Alloc_traits::_S_nothrow_move())
+      |                 [01;36m[K~~~~~~~~~^~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:727:7:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::vector<_Tp, _Alloc>& std::vector<_Tp, _Alloc>::operator=(std::initializer_list<_Tp>) [with _Tp = float; _Alloc = std::allocator<float>][m[K’
+  727 |       [01;36m[Koperator[m[K=(initializer_list<value_type> __l)
+      |       [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_vector.h:727:46:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Kfloat[m[K’ to ‘[01m[Kstd::initializer_list<float>[m[K’
+  727 |       operator=([01;36m[Kinitializer_list<value_type> __l[m[K)
+      |                 [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:22:[m[K [01;31m[Kerror: [m[K‘[01m[Knav_msgs::OccupancyGrid[m[K’ {aka ‘[01m[Kstruct nav_msgs::OccupancyGrid_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kat[m[K’; did you mean ‘[01m[Kdata[m[K’?
+   93 |                 grid.[01;31m[Kat[m[K(i) = 100 * (z_vals.at(i) - z_min) / (z_max - z_min);
+      |                      [01;31m[K^~[m[K
+      |                      [32m[Kdata[m[K
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:50:[m[K [01;31m[Kerror: [m[Kno match for ‘[01m[Koperator-[m[K’ (operand types are ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} and ‘[01m[Kfloat[m[K’)
+   93 |                 grid.at(i) = 100 * ([32m[Kz_vals.at(i)[m[K [01;31m[K-[m[K [34m[Kz_min[m[K) / (z_max - z_min);
+      |                                     [32m[K~~~~~~~~~~~~[m[K [01;31m[K^[m[K [34m[K~~~~~[m[K
+      |                                              [32m[K|[m[K     [34m[K|[m[K
+      |                                              [32m[K|[m[K     [34m[Kfloat[m[K
+      |                                              [32m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type {aka std::vector<float>}[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:415:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__y.base() - __x.base())) std::operator-(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)[m[K’
+  415 |     [01;36m[Koperator[m[K-(const reverse_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:415:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} is not derived from ‘[01m[Kconst std::reverse_iterator<_Iterator>[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR> decltype ((__x.base() - __y.base())) std::operator-(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)[m[K’
+ 1209 |     [01;36m[Koperator[m[K-(const move_iterator<_IteratorL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:1209:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} is not derived from ‘[01m[Kconst std::move_iterator<_IteratorL>[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:361:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const std::complex<_Tp>&)[m[K’
+  361 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:361:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&, const _Tp&)[m[K’
+  370 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x, const _Tp& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:379:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const _Tp&, const std::complex<_Tp>&)[m[K’
+  379 |     [01;36m[Koperator[m[K-(const _Tp& __x, const complex<_Tp>& __y)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:379:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  mismatched types ‘[01m[Kconst std::complex<_Tp>[m[K’ and ‘[01m[Kfloat[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/boost/config/no_tr1/complex.hpp:21[m[K,
+                 from [01m[K/usr/include/boost/math/policies/error_handling.hpp:17[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:14[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/complex:456:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp> std::complex<_Tp> std::operator-(const std::complex<_Tp>&)[m[K’
+  456 |     [01;36m[Koperator[m[K-(const complex<_Tp>& __x)
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/complex:456:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} is not derived from ‘[01m[Kconst std::complex<_Tp>[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/vector:68[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/math_fwd.hpp:26[m[K,
+                 from [01m[K/usr/include/boost/math/special_functions/round.hpp:15[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:58[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_bvector.h:214:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kstd::ptrdiff_t std::operator-(const std::_Bit_iterator_base&, const std::_Bit_iterator_base&)[m[K’
+  214 |   [01;36m[Koperator[m[K-(const _Bit_iterator_base& __x, const _Bit_iterator_base& __y)
+      |   [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_bvector.h:214:39:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} to ‘[01m[Kconst std::_Bit_iterator_base&[m[K’
+  214 |   operator-([01;36m[Kconst _Bit_iterator_base& __x[m[K, const _Bit_iterator_base& __y)
+      |             [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/callback_queue.h:49[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf2_ros/transform_listener.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:4[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:370:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Ref, class _Ptr> typename std::_Deque_iterator<_Tp, _Ref, _Ptr>::difference_type std::operator-(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _Ref, _Ptr>&)[m[K’
+  370 |     [01;36m[Koperator[m[K-(const _Deque_iterator<_Tp, _Ref, _Ptr>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:370:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/deque:67[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/callback_queue.h:49[m[K,
+                 from [01m[K/opt/ros/noetic/include/tf2_ros/transform_listener.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:4[m[K:
+[01m[K/usr/include/c++/9/bits/stl_deque.h:382:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _RefL, class _PtrL, class _RefR, class _PtrR> typename std::_Deque_iterator<_Tp, _Ref, _Ptr>::difference_type std::operator-(const std::_Deque_iterator<_Tp, _Ref, _Ptr>&, const std::_Deque_iterator<_Tp, _RefR, _PtrR>&)[m[K’
+  382 |     [01;36m[Koperator[m[K-(const _Deque_iterator<_Tp, _RefL, _PtrL>& __x,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_deque.h:382:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} is not derived from ‘[01m[Kconst std::_Deque_iterator<_Tp, _Ref, _Ptr>[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:974:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _IteratorL, class _IteratorR, class _Container> decltype ((__lhs.base() - __rhs.base())) __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)[m[K’
+  974 |     [01;36m[Koperator[m[K-(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:974:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} is not derived from ‘[01m[Kconst __gnu_cxx::__normal_iterator<_IteratorL, _Container>[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+In file included from [01m[K/usr/include/c++/9/bits/stl_algobase.h:67[m[K,
+                 from [01m[K/usr/include/c++/9/bits/char_traits.h:39[m[K,
+                 from [01m[K/usr/include/c++/9/string:40[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/platform.h:38[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/time.h:53[m[K,
+                 from [01m[K/opt/ros/noetic/include/ros/ros.h:38[m[K,
+                 from [01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:1[m[K:
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:986:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Iterator, class _Container> typename __gnu_cxx::__normal_iterator<_Iterator, _Container>::difference_type __gnu_cxx::operator-(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)[m[K’
+  986 |     [01;36m[Koperator[m[K-(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/usr/include/c++/9/bits/stl_iterator.h:986:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:93:52:[m[K [01;36m[Knote: [m[K  ‘[01m[K__gnu_cxx::__alloc_traits<std::allocator<std::vector<float> >, std::vector<float> >::value_type[m[K’ {aka ‘[01m[Kstd::vector<float>[m[K’} is not derived from ‘[01m[Kconst __gnu_cxx::__normal_iterator<_Iterator, _Container>[m[K’
+   93 |                 grid.at(i) = 100 * (z_vals.at(i) - [01;36m[Kz_min[m[K) / (z_max - z_min);
+      |                                                    [01;36m[K^~~~~[m[K
+make[2]: *** [CMakeFiles/transform_pointcloud_node.dir/build.make:63: CMakeFiles/transform_pointcloud_node.dir/src/transform_pointcloud.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:403: CMakeFiles/transform_pointcloud_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

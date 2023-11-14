@@ -1,0 +1,8 @@
+prefix=/home/ndev/Documents/nmt/map_test/catkin_ws/install
+
+Name: mapping
+Description: Description of mapping
+Version: 0.0.1
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

@@ -1,0 +1,1 @@
+/home/ndev/Documents/nmt/map_test/catkin_ws/devel/.private/mapping/share/mapping/cmake/mappingConfig.cmake

@@ -1,0 +1,25 @@
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:[m[K In function ‘[01m[Kvoid callback(const PointCloud2ConstPtr&)[m[K’:
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:98:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_x[m[K’ was not declared in this scope; did you mean ‘[01m[Ksize_t[m[K’?
+   98 |                 float x = *iter_x + [01;31m[Ksize_x[m[K / 2;
+      |                                     [01;31m[K^~~~~~[m[K
+      |                                     [32m[Ksize_t[m[K
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:99:37:[m[K [01;31m[Kerror: [m[K‘[01m[Ksize_y[m[K’ was not declared in this scope; did you mean ‘[01m[Ksize_t[m[K’?
+   99 |                 float y = *iter_y + [01;31m[Ksize_y[m[K / 2;
+      |                                     [01;31m[K^~~~~~[m[K
+      |                                     [32m[Ksize_t[m[K
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:105:62:[m[K [01;31m[Kerror: [m[Kinvalid types ‘[01m[Kstd::vector<float>*[float][m[K’ for array subscript
+  105 |                 z_vals[y_size * x / cell_size + y / cell_size[01;31m[K][m[K.push_back(z);
+      |                                                              [01;31m[K^[m[K
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:111:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K][m[K’ before ‘[01m[K)[m[K’ token
+  111 |                         float z = getMedian(z_vals[y_size * x + y[01;31m[K)[m[K;
+      |                                                                  [01;31m[K^[m[K
+      |                                                                  [32m[K][m[K
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:111:66:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kstd::vector<int>&[m[K’ from expression of type ‘[01m[Kstd::vector<float>[m[K’
+  111 |                         float z = getMedian([01;31m[Kz_vals[y_size * x + y)[m[K;
+      |                                             [01;31m[K~~~~~~~~~~~~~~~~~~~~~^[m[K
+[01m[K/home/ndev/Documents/nmt/map_test/catkin_ws/src/mapping/src/transform_pointcloud.cpp:62:36:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kdouble getMedian(std::vector<int>&)[m[K’
+   62 | double getMedian([01;36m[Kstd::vector<int>& vec[m[K) {
+      |                  [01;36m[K~~~~~~~~~~~~~~~~~~^~~[m[K
+make[2]: *** [CMakeFiles/transform_pointcloud_node.dir/build.make:63: CMakeFiles/transform_pointcloud_node.dir/src/transform_pointcloud.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:403: CMakeFiles/transform_pointcloud_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

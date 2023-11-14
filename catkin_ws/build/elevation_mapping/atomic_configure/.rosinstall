@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/ndev/Documents/nmt/map_test/catkin_ws/devel/.private/elevation_mapping/setup.sh

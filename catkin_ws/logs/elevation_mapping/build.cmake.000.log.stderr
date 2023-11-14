@@ -1,0 +1,15 @@
+[31m[1mCMake Error[0m at /opt/ros/noetic/share/catkin/cmake/catkinConfig.cmake:83 (find_package):
+  Could not find a package configuration file provided by "eigen_conversions"
+  with any of the following names:
+
+    eigen_conversionsConfig.cmake
+    eigen_conversions-config.cmake
+
+  Add the installation prefix of "eigen_conversions" to CMAKE_PREFIX_PATH or
+  set "eigen_conversions_DIR" to a directory containing one of the above
+  files.  If "eigen_conversions" provides a separate development package or
+  SDK, be sure it has been installed.
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:27 (find_package)
+
+

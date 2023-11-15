@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.0.2)
+set(CMAKE_BUILD_TYPE Release)
 project(mapping)
 
 ## Compile as C++11, supported in ROS Kinetic and newer

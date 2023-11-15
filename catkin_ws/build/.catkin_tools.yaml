@@ -1,6 +1,0 @@
-devel_space: /home/ndev/Documents/nmt/map_test/catkin_ws/devel
-install: false
-install_space: /home/ndev/Documents/nmt/map_test/catkin_ws/install
-profile: default
-source_space: /home/ndev/Documents/nmt/map_test/catkin_ws/src
-workspace: /home/ndev/Documents/nmt/map_test/catkin_ws

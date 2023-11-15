@@ -16,19 +16,22 @@ std::string map_frame;
 std::string pointcloud_topic;
 
 // in m
-int map_x_size = 30;
-int map_y_size = 30;
-float cell_size = 0.1;
+const int map_x_size = 30;
+const int map_y_size = 30;
+const float cell_size = 0.1;
 
-int min_vals = 5;
-int x_size = map_x_size / cell_size + 0.5;
-int y_size = map_y_size / cell_size + 0.5;
+const int min_vals = 5;
+const int x_size = map_x_size / cell_size + 0.5;
+const int y_size = map_y_size / cell_size + 0.5;
+
+const float alpha = 0.5;
+const float reasonable_bound = 5;
+
 float z_min = INT_MAX;
 float z_max = -INT_MAX;
 nav_msgs::OccupancyGrid grid;
-float est_floor_height = -1.5;
-std::vector<float> z_vals(x_size * y_size, -INT_MAX);
-float alpha = 0.25;
+// std::vector<float> z_vals(x_size * y_size, 0);
+float z_vals[x_size * y_size];
 
 
 void callback(const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
@@ -59,31 +62,33 @@ void callback(const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
                 float x = *iter_x;
                 float y = *iter_y;
                 float z = *iter_z;
-                // x = x * 0.0254;
-                // y = y * 0.0254;
-                // z = z * 0.0254;
-                // std::cout << x << " " << y << " " << z << "\n";
 
                 if (x < map_x_size / 2 && x > -map_x_size / 2 &&
                     y < map_y_size / 2 && y > -map_y_size / 2)
                 {
-                    z_min = z < z_min ? z : z_min;
-                    z_max = z > z_max ? z : z_max;
+                    if (z < reasonable_bound && z > -reasonable_bound) {
+                        // Calculate index in map
+                        int x_coord = x / cell_size + x_size/2;
+                        int y_coord = y / cell_size + y_size/2;
+                        int i = x_size * y_coord + x_coord;
 
-                    int x_coord = x / cell_size + x_size/2;
-                    int y_coord = y / cell_size + y_size/2;
-                    int i = x_size * y_coord + x_coord;
-
-                    // std::cout << x_coord << " " << y_coord << " " << i << "\n";
-                    // if (z > z_vals.at(i)) {
-                    //     z_vals.at(i) = z;
-                    // }
-                    // sums[i] += z;
-                    // z_vals[i].push_back(z);
+                        // Update new value
+                        float current = z_vals[i];
+                        float delta = (z - current) * alpha;
+                        float new_z = current + delta;
+                        z_vals[i] = new_z;
+                    
+                        // Update min and max;
+                        z_min = new_z < z_min ? new_z : z_min;
+                        z_max = new_z > z_max ? new_z : z_max;
+                    }
                 }
             }
 
-            // for (int i = 0; i < x_size * y_size; i++) {
+            for (int i = 0; i < x_size * y_size; i++) {
+                grid.data.at(i) = 100 * (z_vals[i] - z_min) / (z_max - z_min);
+            }
+
                 // STDEV
                 // int num_z = z_vals[i].size();
                 // float mean = sums[i] / num_z;
@@ -95,9 +100,6 @@ void callback(const sensor_msgs::PointCloud2ConstPtr& cloud_msg)
                 // stdev /= num_z;
                 // stdev = sqrt(stdev);
                 // grid.data.at(i) = 100 * (mean + stdev - z_min) / (z_max - z_min);
-
-            // }
-
             // int c_min = quickselect(count, 0, count.size() - 1, 0);
             // int c_max = quickselect(count, 0, count.size() - 1, count.size() - 1);
             // for (size_t i = 0; i < count.size(); i++) {
@@ -154,6 +156,7 @@ int main(int argc, char** argv)
     grid.info.origin.position.x = -map_x_size/2;
     grid.info.origin.position.y = -map_y_size/2;
     grid.data.assign(x_size * y_size, -1);
+    memset(z_vals, sizeof(z_vals), 0);
 
     ros::spin();
     // delete[] z_vals;
